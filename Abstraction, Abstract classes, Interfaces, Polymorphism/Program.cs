@@ -8,9 +8,9 @@ namespace Abstraction__Abstract_classes__Interfaces__Polymorphism
         static void Main(string[] args)
         {
             int key = 1;
-            while (key >= 1 && key <= 2)
+            while (key >= 0 && key <= 2)
             {
-                Console.WriteLine("1,2,3");
+                Console.WriteLine("0,1,2");
                 key = Convert.ToInt32(Console.ReadLine());
                 switch (key)
                 {
@@ -24,7 +24,7 @@ namespace Abstraction__Abstract_classes__Interfaces__Polymorphism
                         Rectangular r = new Rectangular(5, 10);
                         r.CalcArea();
                         break;
-                    case 3:
+                    case 0:
                         Console.WriteLine("Quit");
                         break;
                 }
